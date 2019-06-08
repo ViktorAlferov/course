@@ -1,0 +1,42 @@
+{
+    "plugins": [
+        "babel",
+        "standard",
+        "promise",
+        "react"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "script",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "extends": ["standard", "eslint:all", "plugin:react/all"],
+    "rules": {
+        "jsx-quotes": ["error", "prefer-single"],
+        "no-invalid-this": "off",
+        "linebreak-style": ["error", "windows"],
+        "max-len": ["error", 120],
+        "no-process-env": "off",
+        "no-script-url": "off",
+        "no-ternary": "off",
+        "no-underscore-dangle": ["error", { "allow": ["_id"] }],
+        "quote-props": ["error", "consistent-as-needed"],
+        "react/jsx-indent-props": ["error", 2],
+        "react/jsx-indent": ["error", 2],
+        "react/jsx-max-depth": "off",
+        "react/jsx-max-props-per-line": ["error", { "maximum": 2, "when": "always" }],
+        "react/jsx-no-literals": "off",
+        "react/jsx-sort-props": "off",
+        "react/no-multi-comp": "off",
+        "react/no-set-state": "off",
+        "react/require-optimization": "off",
+        "sort-imports": "off",
+        "sort-keys": "off",
+        "id-length": ["error", { "exceptions": ["_", "$"] }],
+        "no-console": 0,
+        "no-magic-numbers": ["error", {"ignore": [0, 1]}]
+    }
+}
